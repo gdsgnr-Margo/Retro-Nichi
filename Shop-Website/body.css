@@ -1,0 +1,196 @@
+.intro2 {
+  padding: 1rem 8%;
+  height: 140vh;
+  background-color: #2D2424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container4 {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.container4 h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container4 p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.cardshome {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: left;
+  width: 320px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.03);
+}
+
+.card1name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card1img-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card1img {
+  width: 220px;
+  height: 220px;
+}
+
+.card1desc {
+  color: #666;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.card1price {
+  margin-top: 10px;
+  color: #2D2424;
+  font-weight: 900;
+}
+
+.intro2 a {
+  color: #000;
+}
+
+.intro2 a:hover {
+  color: #ffffff;
+}
+
+.button1 {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.button1:hover {
+  letter-spacing: 3px;
+  color: #000000;
+  background-color: #E0C097;
+  box-shadow: rgb#000000 0px 7px 29px 0px;
+}
+
+.button1:active {
+  letter-spacing: 3px;
+  background-color: #E0C097;
+  color: #000000;
+  box-shadow: #000000 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.intro3 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url('elements/model10.5.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 8%;
+}
+
+.container5 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50rem;
+}
+
+.container5 h1 {
+  font-size: 5rem;
+  color: #2D2424;
+}
+
+.container5 p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #2D2424;
+  margin-bottom: 40px;
+}
+
+.intro3 a {
+  color: #000;
+}
+
+.intro3 a:hover {
+  color: #000000;
+}
+
+.intro3 .button6 {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+  width: 100%;
+
+}
+
+.intro3 .button6:hover {
+  letter-spacing: 3px;
+  color: #000000;
+  background-color: #E0C097;
+  box-shadow: rgb#000000 0px 7px 29px 0px;
+}
+
+.intro3 .button6:active {
+  letter-spacing: 3px;
+  background-color: #E0C097;
+  color: #000000;
+  box-shadow: #000000 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.desc1 {
+  margin-top: 20px;
+}
+
+.desc1 p {
+  margin-bottom: 20px;
+}

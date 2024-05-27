@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: url('elements/model11.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+
+.container8 {
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translate(30%, -50%);
+}
+
+
+/* Closing */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E0C097;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    z-index: 9999;
+    width: 100%;
+}
+
+.popup-content {
+    position: relative;
+    margin: 20px;
+}
+
+.popup h2 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.popup p {
+    margin: 5px 0 20px;
+}
+
+.close {
+    position: fixed;
+    top: 10px;
+    right: 60px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.close:hover {
+    color: #fff;
+}
+/* end */
+
+.hidden {
+    display: none;
+}
+
+/* Checkout form */
+.checkoutForm {
+    padding: 20px 30px 30px 20px;  
+    margin: 60px auto 0;
+    border-radius: 10px;
+}
+
+.checkoutForm h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.container10 {
+    margin: 10px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.cardinfo{
+    margin-top: 10px;
+}
+
+.cardinfo input[type="text"] {
+    height: 35px;
+    width: 300px;
+    padding: 5px;
+}
+
+.payment-group {
+    display: flex;
+    align-items: center;
+}
+
+.payment-group label {
+    width: 160px;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.payment-group .lblop {
+    width: 150px;
+    text-align: left;
+}
+/* end */
+
+
+/* Place order, back btn */
+.button3 {
+    display: inline-block;
+    margin: 20px 10px 10px 10px;
+    padding: .7rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    color: #000;
+    font-size: 20px;
+}
+
+.button3:hover {
+    color: #000000;
+    background-color: #E0C097;
+    box-shadow: rgb#000000 0px 7px 29px 0px;
+}
+
+.button3:active {
+    background-color: #E0C097;
+    color: #000000;
+    box-shadow: #000000 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 100ms;
+}
+
+
+.chk a {
+    color: #000;
+}
+
+/* end */
+
+.errorgrp {
+    font-weight: 250;
+    font-size: 12px;
+}
+
+.btngrp1, .errorgrp {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+    font-style: italic;
+    margin: 0;
+}
+
+
+/* Thanks popup */
+.button4 {
+    display: inline-block;
+    margin: 20px 10px 10px 10px;
+    padding: .7rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    color: #000;
+}
+
+.button4:hover {
+    color: #fff;
+    background-color: #2D2424;
+    box-shadow: rgb#000000 0px 7px 29px 0px;
+}
+
+.button4:active {
+    color: #fff;
+    background-color: #2D2424;
+    box-shadow: #000000 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 100ms;
+}
+
+.chk1 a {
+    color: #000000;
+}
+
+.chk1 a:hover {
+    color: #ffffff;
+}
+
+/* end */

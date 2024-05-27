@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RN | Collection</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="addtocart.js" defer></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="Shop.html">Retro Nichi</a></div>
+            <ul class="links">
+                <li><a href="Shop.html">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <a href="index.html" class="action_btn" onclick="logout()">Logout</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+                <li><a href="Shop.html">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="index.html" class="action_btn" onclick="logout()">Logout</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+        const logoutBtn = document.querySelector('.action_btn')
+        logoutBtn.onclick = function() {
+        window.location.href = "index.html"
+        }
+    </script>
+
+    <!--Products-->    
+    <div class="container3">
+        <div class="container">
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Chic Drift O1.png">
+                    <div class="card-title">Chic Drift O1</div>
+                    <div class="card-description">Embrace comfort in style with our oversized shirt.</div>
+                    <div class="card-price">650.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Chic Drift O2.png">
+                    <div class="card-title">Chic Drift O2</div>
+                    <div class="card-description">Embrace comfort in style with our oversized shirt.</div>
+                    <div class="card-price">650.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Chic Drift O3.png">
+                    <div class="card-title">Chic Drift O3</div>
+                    <div class="card-description">Embrace comfort in style with our oversized shirt.</div>
+                    <div class="card-price">650.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Chic Drift O4.png">
+                    <div class="card-title">Chic Drift O4</div>
+                    <div class="card-description">Embrace comfort in style with our oversized shirt.</div>
+                    <div class="card-price">650.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Chic Drift O5.png">
+                    <div class="card-title">Chic Drift O5</div>
+                    <div class="card-description">Embrace comfort in style with our oversized shirt.</div>
+                    <div class="card-price">650.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Nostal Snap P1.png">
+                    <div class="card-title">Nostal Snap P1</div>
+                    <div class="card-description">Step back in time with Nostal Snap sweatpants. Retro vibes and ultimate comfort.</div>
+                    <div class="card-price">2499.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Nostal Snap P2.png">
+                    <div class="card-title">Nostal Snap P2</div>
+                    <div class="card-description">Step back in time with Nostal Snap sweatpants. Retro vibes and ultimate comfort.</div>
+                    <div class="card-price">2499.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Nostal Snap P3.png">
+                    <div class="card-title">Nostal Snap P3</div>
+                    <div class="card-description">Step back in time with Nostal Snap sweatpants. Retro vibes and ultimate comfort.</div>
+                    <div class="card-price">2499.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Nostal Snap P4.png">
+                    <div class="card-title">Nostal Snap P4</div>
+                    <div class="card-description">Step back in time with Nostal Snap sweatpants. Retro vibes and ultimate comfort.</div>
+                    <div class="card-price">2499.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Nostal Snap P5.png">
+                    <div class="card-title">Nostal Snap P5</div>
+                    <div class="card-description">Step back in time with Nostal Snap sweatpants. Retro vibes and ultimate comfort.</div>
+                    <div class="card-price">2499.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Retro Wrap H1.png">
+                    <div class="card-title">Retro Wrap H1</div>
+                    <div class="card-description">Wrap yourself in retro bliss with the Retro Wrap hoodie. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">1450.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Retro Wrap H2.png">
+                    <div class="card-title">Retro Wrap H2</div>
+                    <div class="card-description">Wrap yourself in retro bliss with the Retro Wrap hoodie. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">1450.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Retro Wrap H3.png">
+                    <div class="card-title">Retro Wrap H3</div>
+                    <div class="card-description">Wrap yourself in retro bliss with the Retro Wrap hoodie. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">1450.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Retro Wrap H4.png">
+                    <div class="card-title">Retro Wrap H4</div>
+                    <div class="card-description">Wrap yourself in retro bliss with the Retro Wrap hoodie. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">1450.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Retro Wrap H5.png">
+                    <div class="card-title">Retro Wrap H5</div>
+                    <div class="card-description">Wrap yourself in retro bliss with the Retro Wrap hoodie. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">1450.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Vintage Vibe J1.png">
+                    <div class="card-title">Vintage Vibe J1</div>
+                    <div class="card-description">Feel the nostalgia and embrace the warmth of retro fashion. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">980.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Vintage Vibe J2.png">
+                    <div class="card-title">Vintage Vibe J2</div>
+                    <div class="card-description">Feel the nostalgia and embrace the warmth of retro fashion. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">980.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Vintage Vibe J3.png">
+                    <div class="card-title">Vintage Vibe J3</div>
+                    <div class="card-description">Feel the nostalgia and embrace the warmth of retro fashion. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">980.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Vintage Vibe J4.png">
+                    <div class="card-title">Vintage Vibe J4</div>
+                    <div class="card-description">Feel the nostalgia and embrace the warmth of retro fashion. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">980.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <img src="products/Vintage Vibe J5.png">
+                    <div class="card-title">Vintage Vibe J5</div>
+                    <div class="card-description">Feel the nostalgia and embrace the warmth of retro fashion. Aesthetic appeal meets cozy warmth.</div>
+                    <div class="card-price">980.00 Php</div>
+                    <button class="showFormBtn">Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <!--My cart-->
+        <div class="container2" name="top">
+            <div class="sidebar">
+                <div class="head"><p>CART</p></div>
+                <div class="cartItem" id="cartMessage">Your cart is empty</div>
+                <div id="orderContainer"></div>
+                <div class="foot1">
+                    <h6>Subtotal</h6>
+                    <h6>Additional charges depending on the area of delivery.</h6>
+                </div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h3 id="total">0.00 Php</h3>
+                </div>
+                <a href="checkout.html"><button class="place hidden">Place order</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Customize order-->
+    <div id="formContainer" class="hidden">
+        <form id="productForm">
+            <h1>Add to cart</h1>
+            <p>What do you like about this product? Adjust the quantity and size according to your preferences for our product!</p>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" value="" disabled><br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1"><br><br>
+
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="S">Small</option>
+                <option value="M">Medium (+10 Php)</option>
+                <option value="L">Large (+15 Php)</option>
+            </select><br><br>
+
+            <!-- Hidden input to store product price -->
+            <input type="hidden" id="price">
+
+            <button type="submit">Add to Order</button>
+            <button type="button" id="closeform">Cancel</button>
+        </form>
+    </div>
+
+    <!--Go back up-->
+    <button id="backToTopBtn" title="Go to top">Go back to the top</button>
+    <script>
+        let backToTopBtn = document.getElementById("backToTopBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        backToTopBtn.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+        </script>
+
+
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h1 style="margin-bottom: 30px; font-size: 40px;">Margo.Dsgnr</h1>
+                <p>Welcome to my creative corner!</p>
+                <p>I'm Margo, a passionate graphic designer dedicated to bringing visions to life through captivating visuals and innovative designs.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>Block 25, Phase 2</p>
+                <p>San Lorenzo, Brgy. San Juan,</p>
+                <p>Taytay, Rizal, Philippines</p>
+                <p class="email-id">fundanomargaret03@gmail.com</p>
+                <p>(+63)-916-702-6348</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="Shop.html">Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/16RuH3rDPUtXS5xJXkxGRIoW1ggFjHjt8?usp=drive_link" target="_blank">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Socials <div class="underline"><span></span></div></h3>
+                <span class="social-icons">
+                    <a href="https://www.facebook.com/mariamargaretfundano?mibextid=LQQJ4d" target="_blank"><img src="logos/facebook.png"></a>
+                </span>
+                <span class="social-icons">
+                    <a href="https://www.instagram.com/margo_gdsgnr/" target="_blank"><img src="logos/instagram.png"></a>
+                </span>
+                <span class="social-icons">
+                    <a href="https://www.linkedin.com/in/margaretfundano/" target="_blank"><img src="logos/linkedin.png"></a>
+                </span>
+                <span class="social-icons">
+                    <a href="https://www.twitter.com/MargoGdesigner" target="_blank"><img src="logos/twitter.png"></a>
+                </span>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <p class="copyright">Margo.Designer © 2024 - All Rights Reserved</p>
+        <br>
+    </footer>
+    
+
+</body>
+</html>

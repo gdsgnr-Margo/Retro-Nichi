@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | Retro Nichi</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="elements/login3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+        var attempt = 0;
+
+        function login() {
+            var uname = document.getElementById("username").value;
+            var pword = document.getElementById("password").value;
+            var valid = document.getElementById("confirm").value;
+
+            if (uname == "fundano@gmail.com" && pword == "1234" && valid == "1234") {
+                window.location.href = "Shop.html";
+                return true;
+            } else {
+                attempt++;
+                if (attempt >= 3) {
+                    alert("Wrong credentials.");
+                    document.getElementById("btnlogin").disabled = true;
+                    document.getElementById("username").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("username").value = "";
+                    document.getElementById("password").value = "";
+                    return false;
+                } else {
+                    alert("Incorrect username or password. Attempts left: " + (3 - attempt));
+                    return false;
+                }
+            }
+        }
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var radio = document.getElementById("password_visibility");
+            var label = document.getElementById("reveal");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                radio.checked = true;
+                label.textContent = "Hide Password";
+            } else {
+                passwordInput.type = "password";
+                radio.checked = false;
+                label.textContent = "Show Password";
+            }
+        }
+
+        function toggleConfirmPasswordVisibility() {
+            var confirmPasswordInput = document.getElementById("confirm");
+            var radio = document.getElementById("conpassword_visibility");
+            var label = document.getElementById("conreveal");
+
+            if (confirmPasswordInput.type === "password") {
+                confirmPasswordInput.type = "text";
+                radio.checked = true;
+                label.textContent = "Hide Password";
+                } else {
+                confirmPasswordInput.type = "password";
+                radio.checked = false;
+                label.textContent = "Show Password";
+                }
+            }
+    </script>
+
+    <!--Log in form-->
+    <form class="form">
+        <div class="container6">
+            <div class="card">
+                <span class="title">Log In | Retro Nichi</span>
+                <div class="desc2">Welcome to Retro Nichi! Dive into a nostalgic journey through time. Login now to unlock exclusive vintage experiences and rediscover the charm of yesteryears. Let's embark on this retro adventure together! </div>
+                <br>
+
+                <div class="group">
+                    <p>Username</p>
+                    <input placeholder="" type="text" id="username" name="username"/>
+                </div>
+
+                <div class="group">
+                    <p>Password</p>
+                    <input placeholder="" type="password" id="password" name="password"/> <br>
+                </div>
+                <div class="rad">
+                    <input type="radio" id="password_visibility" name="password_visibility" onclick="togglePasswordVisibility()">
+                    <label id="reveal">Show Password</label>
+                </div>
+
+                <div class="group">
+                    <p>Confirm Password</p>
+                    <input placeholder="" type="password" id="confirm" name="confirm"/>
+                </div>
+                <div class="rad">
+                    <input type="radio" id="conpassword_visibility" name="conpassword_visibility" onclick="toggleConfirmPasswordVisibility()">
+                    <label id="conreveal">Show Password</label>
+                </div>
+            
+                <button type="button" id="btnlogin" onclick="login()">Log in</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

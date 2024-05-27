@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100vh;
+    background: url('elements/2clotherack.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* My cart */
+.container2 {
+    display: flex;
+    width: 450px;
+    padding: 15px;
+}
+
+.sidebar {
+    height: fit-content;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.head {
+    border-radius: 3px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: #2D2424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foot1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(70, 34, 0);
+}
+
+.foot1 h6 {
+    font-weight: 500;
+    font-style: italic;
+    color: #505050;
+}
+/* end */
+
+
+/* Products */
+.container {
+    max-width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 5px;
+    margin-bottom: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 480px;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 210px;
+}
+
+.card-description {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 20px;
+    width: 210px;
+}
+
+.card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(70, 34, 0);
+}
+/* end */
+
+
+/* Form popup */
+#formContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.showFormBtn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 11px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    width: 210px;
+    letter-spacing: 1.5px;
+}
+
+.showFormBtn:hover {
+    color: #fff;
+    background-color: rgb(70, 34, 0);
+    box-shadow: rgb(70, 34, 0) 0px 7px 29px 0px;
+}
+
+.showFormBtn:active {
+    background-color: rgb(70, 34, 0);
+    color: #fff;
+    box-shadow: rgb(70, 34, 0) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+#productForm label {
+  font-weight: bold;
+}
+
+#productForm input[type="text"],
+#productForm input[type="number"],
+#productForm select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#productForm button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2D2424;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#productForm button:hover {
+  background-color: rgb(70, 34, 0);
+}
+
+#productForm h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+}
+
+#productForm p {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: #505050;
+}
+
+#cancelBtn {
+  background-color: #ccc;
+}
+
+#cancelBtn:hover {
+  background-color: #999;
+}
+/* end */
+
+
+
+/* Cart and product */
+.container3 {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+/* Hide */
+.hidden {
+    display: none;
+}
+
+
+/* Order item layout cart*/
+.order-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-box {
+    width: 30%;
+    margin: 5px;
+}
+
+.img-box img {
+    max-width: 100%;
+}
+
+.bottom {
+    text-align: left;
+    margin: 5px;
+    width: 60%;
+}
+
+.bottom p {
+    margin: 5px 0;
+}
+
+.deleteBtn {
+    width: 90%;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(70, 34, 0);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deleteBtn:hover {
+    background-color: #505050;
+}
+/* end */
+
+
+/* Add to cart list form */
+.place {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    padding: .8rem 3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    box-shadow: rgb(0 0 0 / 8%) 0 0 11px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    width: 300px;
+    letter-spacing: 1.5px;
+}
+
+.place:hover {
+    color: #fff;
+    background-color: rgb(70, 34, 0);
+    box-shadow: rgb(70, 34, 0) 0px 7px 29px 0px;
+}
+
+.place:active {
+    background-color: rgb(70, 34, 0);
+    color: #fff;
+    box-shadow: rgb(70, 34, 0) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.place a {
+    color: #fff;
+}
+
+.place {
+    display: none;
+}
+
+/* end */
